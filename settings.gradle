@@ -1,4 +1,4 @@
 include ':app'
-include ':module_ucrop'
+//include ':module_ucrop'
 include ':module_picture'
 rootProject.name = "ImagePickerProject"
