@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <paths>
+        <!--
+       files-path：          该方式提供在应用的内部存储区的文件/子目录的文件。
+                             它对应Context.getFilesDir返回的路径：eg:”/data/data/com.***.***/files”。
+
+       cache-path：          该方式提供在应用的内部存储区的缓存子目录的文件。
+                             它对应Context.getCacheDir返回的路:eg:“/data/data/com.***.***/cache”；
+
+       external-path：       该方式提供在外部存储区域根目录下的文件。
+                             它对应Environment.getExternalStorageDirectory返回的路径
+
+       external-files-path:  Context.getExternalFilesDir(null)
+       external-cache-path： Context.getExternalCacheDir(String)
+       <files-path/>代表的根目录： [Context.getFilesDir()]
+       <external-path/>代表的根目录: [Environment.getExternalStorageDirectory()]
+       <cache-path/>代表的根目录: [getCacheDir()]
+       -->
+        <!--存储卡的Download/apk目录放安装包文件-->
+        <external-path
+            name="download"
+            path="Download/apk" />
+
+        <!--存储卡的Pictures目录放图片文件-->
+        <external-path
+            name="images"
+            path="Pictures" />
+
+        <!--存储卡的Cache目录放图片文件-->
+        <cache-path
+            name="cache"
+            path="Cache" />
+
+        <!-- 对应Environment.getExternalStorageDirectory() -->
+        <external-path
+            name="external_storage_root"
+            path="." />
+
+           <!-- 对应应用程序内部存储区域的cache子目录中的文件Context.getCacheDir()  -->
+        <cache-path
+            name="cache_files"
+            path="." />
+
+           <!-- 对应应用程序外部存储区根目录中的文件Context.getExternalFilesDir(null)  -->
+        <external-files-path
+            name="external_files"
+            path="." />
+
+           <!-- 对应应用程序外部缓存区域根目录中的文件Context.getExternalCacheDir()  -->
+        <external-cache-path
+            name="external_cache_files"
+            path="." />
+
+           <!-- 对应应用程序内部存储区域的子目录中的文件Context.getFilesDir() -->
+        <files-path
+            name="path_files"
+            path="." />
+
+           <!-- 对应代表应用程序外部媒体区域根目录中的文件Context.getExternalMediaDirs() -->
+        <external-media-path
+            name="external_media_path"
+            path="." />
+
+        <!-- 对应SD卡  -->
+        <root-path
+            name="external_999_root"
+            path="." />
+    </paths>
+</resources>
+
+
+

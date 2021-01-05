@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F71605</color>
+    <color name="colorPrimaryDark">#FB1605</color>
+    <color name="colorAccent">#101111</color>
+    <color name="photo_fff">#FFFFFF</color>
+    <color name="photo_333">#333333</color>
+    <color name="photo_666">#666666</color>
+    <color name="photo_999">#999999</color>
+    <color name="photo_eee">#eeeeee</color>
+    <color name="photo_000">#000000</color>
+    <color name="photo_tra">#00000000</color>
+</resources>

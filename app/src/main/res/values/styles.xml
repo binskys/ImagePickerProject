@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--标题栏的颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--状态栏的颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--默认的光标、选中的RadioButton颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Style.DialogFragment" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <!--向上弹起向下滑落-->
+    <style name="dialog_in_out" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <!--从左弹出从右关闭-->
+    <style name="dialog_left_right" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_left</item>
+        <item name="android:windowExitAnimation">@anim/dialog_right</item>
+    </style>
+
+    <!--缩放动画-->
+
+    <style name="dark_fade">
+        <item name="android:windowEnterAnimation">@anim/dark_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dark_fade_out</item>
+    </style>
+</resources>
